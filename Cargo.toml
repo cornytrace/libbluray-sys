@@ -1,0 +1,22 @@
+[package]
+name = "libbluray-sys"
+version = "1.0.0"
+edition = "2021"
+description = "Low level rust bindings to the libbluray library, optionally with libaacs / libbdplus support."
+readme = "README.md"
+repository = "https://github.com/cornytrace/libbluray-sys/"
+license = "LGPL-2.1-or-later"
+keywords = ["bluray", "libbluray", "libaacs", "libbdplus"]
+category = ["external-ffi-bindings"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+[build-dependencies]
+bindgen = "0.61.0"
+
+[features]
+default = ["aacs", "bdplus"]
+aacs = []
+bdplus = []
