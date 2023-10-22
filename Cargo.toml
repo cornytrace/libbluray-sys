@@ -14,7 +14,7 @@ category = ["external-ffi-bindings"]
 [dependencies]
 
 [build-dependencies]
-bindgen = "0.61.0"
+bindgen = "0.68.0"
 
 [features]
 default = ["aacs", "bdplus"]
